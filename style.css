@@ -1,0 +1,279 @@
+/* Basic Reset & Body Styles */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #f0f0f0; /* Light text for dark background */
+    background-color: #1a0033; /* Dark purple background, matching logo */
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center content in sections */
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ffd700; /* Gold/yellow for headings, matching logo text */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 3.5em; /* Larger for main title */
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-top: 40px;
+    border-bottom: 2px solid #ff4500; /* Orange underline for sections */
+    padding-bottom: 10px;
+    display: inline-block; /* Make border only as wide as text */
+}
+
+/* Header Section */
+header {
+    background-color: #330066; /* Slightly lighter purple for header */
+    padding: 60px 0 40px;
+    border-bottom: 5px solid #ff4500; /* Orange border */
+}
+
+.main-logo {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    display: block; /* Centers the image */
+    margin: 0 auto 20px;
+}
+
+.tagline {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ffa500; /* Orange for tagline */
+    margin-bottom: 10px;
+}
+
+.motto {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #f8f8f8;
+    margin-bottom: 30px;
+}
+
+/* Social Buttons */
+.social-links {
+    margin-top: 30px;
+}
+
+.social-button {
+    display: inline-block;
+    background-color: #ff4500; /* Orange button */
+    color: #fff;
+    padding: 12px 25px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.social-button:hover {
+    background-color: #ffa500; /* Lighter orange on hover */
+    transform: translateY(-2px);
+}
+
+.twitter-button {
+    background-color: #1DA1F2; /* Twitter blue */
+}
+.twitter-button:hover {
+    background-color: #26b1ff;
+}
+.telegram-button {
+    background-color: #0088CC; /* Telegram blue */
+}
+.telegram-button:hover {
+    background-color: #0099e6;
+}
+
+
+/* Main Content Sections */
+.section {
+    padding: 50px 0;
+}
+
+.alt-bg {
+    background-color: #2b0057; /* Slightly lighter background for alternating sections */
+}
+
+.section p, .section ul, .section ol {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: left; /* Align text within sections */
+}
+
+.section ul, .section ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.section li {
+    margin-bottom: 10px;
+}
+
+/* Token Info Specifics */
+#token-info ul {
+    list-style: none; /* Remove bullets */
+    padding-left: 0;
+    text-align: center;
+}
+
+#token-info ul li {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.highlight-placeholder {
+    color: #ffd700; /* Highlight placeholders in gold */
+    font-weight: bold;
+}
+
+/* How to Buy Specifics */
+#how-to-buy ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    text-align: center;
+}
+
+#how-to-buy li {
+    margin-bottom: 10px;
+}
+
+#how-to-buy a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#how-to-buy a:hover {
+    text-decoration: underline;
+}
+
+.cta {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ff4500;
+    margin-top: 30px;
+}
+
+/* Roadmap Specifics */
+.roadmap-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.roadmap-list li {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    display: flex; /* For aligning icon and text */
+    justify-content: center; /* Center the entire list item */
+    align-items: center;
+}
+
+.status-complete {
+    color: #32CD32; /* Lime Green for complete */
+    font-size: 1.5em; /* Larger icon */
+    margin-right: 10px;
+}
+
+.status-in-progress {
+    color: #FFA500; /* Orange for in progress */
+    font-size: 1.5em; /* Larger icon */
+    margin-right: 10px;
+}
+
+
+/* Disclaimer Section */
+#disclaimer .disclaimer-text {
+    font-size: 0.9em;
+    color: #ccc;
+    text-align: center;
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+.highlight-bold {
+    font-weight: bold;
+    color: #ff4500; /* Make the "HIGHLY BULLISH!" stand out */
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    background-color: #00001a; /* Very dark background for footer */
+    color: #aaa;
+    padding: 30px 0;
+    font-size: 0.9em;
+    border-top: 3px solid #ff4500; /* Orange border */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .tagline {
+        font-size: 1.2em;
+    }
+
+    .social-button {
+        display: block;
+        margin: 15px auto;
+        width: 80%;
+    }
+
+    .section p, .section ul, .section ol {
+        font-size: 1em;
+        margin: 15px auto;
+    }
+
+    .main-logo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+
+    .section {
+        padding: 30px 0;
+    }
+
+    .main-logo {
+        width: 120px;
+    }
+}
